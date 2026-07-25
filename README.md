@@ -4,8 +4,8 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
 
 ## Subsystems
 
-- **Chassis**: Main structural frame supporting all other subsystems. 
-- **Arm**: Multi-jointed manipulator for underwater operations. 
+- **Drive Train**: Main structural frame supporting all other subsystems. 
+- **Arm**: 6 DoF manipulator. 
 - **Claw**: End-effector responsible for gripping and object interaction. 
 - **EBox**: Electronics enclosure with waterproofing and cable management. 
 - **Float**: Vertical profiling float used to measure depth and pressure data 
