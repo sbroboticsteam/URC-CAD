@@ -9,7 +9,7 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
 4. Now you can access the CAD in Solidworks
 
 ## How Pull Files
-1. Open terminal in the MROV-CAD folder
+1. Open terminal in the URC-CAD folder
 2. Run: git lfs pull
 3. Run: git pull
 
