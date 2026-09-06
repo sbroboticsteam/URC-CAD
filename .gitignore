@@ -1,0 +1,39 @@
+# .gitignore for URC-CAD
+# Keeps SolidWorks temp/lock/backup junk out of the repo so it doesn't
+# clutter history, cause false "changes", or get mistaken for real files.
+
+# SolidWorks lock/temp files (created while a file is open)
+~$*.SLDPRT
+~$*.SLDASM
+~$*.SLDDRW
+~$*.sldprt
+~$*.sldasm
+~$*.slddrw
+
+# SolidWorks auto-backup folders and files
+SW-*
+*.SLDPRT.bak
+*.SLDASM.bak
+*.SLDDRW.bak
+*.old
+*.tmp
+
+# SolidWorks journal / rebuild / thumbnail cache files
+*.SLDPRT.reload
+*.SLDASM.reload
+*.SLDDRW.reload
+*Rebuild_*.SLDPRT
+*Rebuild_*.SLDASM
+
+# SOLIDWORKS PDM / Explorer cache
+*.spf
+*.stmp
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+
+# Local, machine-specific settings some Add-ins create
+*.SLDReg
