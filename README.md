@@ -11,10 +11,10 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
    git clone https://github.com/sbroboticsteam/URC-CAD
    ```
 2. Install git large file system inside your repository
-  
-  ```bash
-   git lfs install
-   ```
+    
+    ```bash
+     git lfs install
+    ```
 3. Now you can access the CAD in Solidworks
 
 ## What To Do Before Each CAD Session 
