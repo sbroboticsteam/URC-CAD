@@ -4,27 +4,37 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
 
 ## How To Access
 
-1. Clone repository onto your computer.
-2. Run "git lfs install" inside your repository
+1. Clone repository onto your computer. 
+3. Run "git lfs install" inside your repository
 4. Now you can access the CAD in Solidworks
 
-## How Pull Files
-1. Open terminal in the URC-CAD folder
-2. Run: git lfs pull
-3. Run: git pull
+## What To Do Before Each CAD Session 
+1. Open a terminal in the URC-CAD repository folder
+2. Run: "git status" to check if there are any unstaged changes.
+  ```bash
+   git status
+   ```
+4. If there are changes, run "git reset --hard origin/main" which will reset your CAD to the current working version. Else skip this step.
+5. Run: git switch main
+6. Run: git pull origin main
+7. Run: git lfs pull origin main
+8. Create a new branch by running the following: git switch -c "subsystem name"/"what you're doing" (Ex. git switch -c arm/update-wrist-bracket)
+9. Once again, run "git status" to make sure everything is peachy
+10. Open up SolidWorks and start CADing
 
-## How To Push Files
-
-1. Open terminal in the URC-CAD folder
+## What To Do After Each CAD Session
+1. Open your terminal in the URC-CAD repository folder again
 2. Run: git add .
-3. Run: git commit -m "commit message"
-4. Run: git push -u origin 'branch name'
+3. Run: git commit -m "Brief overview of what you did"     (Ex: git commit -m "Update wrist bracket mounting geometry")
+4. Run: git push -u origin <branch name> (Ex: git push -u origin arm/update-wrist-bracket)
+5. Open the github repository web page and navigate to pull requests
+
 
 ## Collaboration Guidelines
 
 - Pull the latest version before editing or adding new files.
-- Make sure to not have Solidworks open when either 
-- Push your work after each CADing session
+- Make sure to not have Solidworks open when working with github 
+- Create a pull request with your work after each CADing session
 - DO NOT EDIT FILES THAT SOMEONE ELSE IS WORKING ON PLEASE (We are not fixing CAD merge conflicts lol)
 - Coordinate with other subsystem teams when modifying assemblies.
 - Contact the project leads if you have questions about workflow.
