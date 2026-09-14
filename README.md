@@ -10,17 +10,21 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
 
 ## What To Do Before Each CAD Session 
 1. Open a terminal in the URC-CAD repository folder
-2. Run: "git status" to check if there are any unstaged changes.
+2. Run the following to check if there are any unstaged changes.
   ```bash
    git status
    ```
-4. If there are changes, run "git reset --hard origin/main" which will reset your CAD to the current working version. Else skip this step.
-5. Run: git switch main
-6. Run: git pull origin main
-7. Run: git lfs pull origin main
-8. Create a new branch by running the following: git switch -c "subsystem name"/"what you're doing" (Ex. git switch -c arm/update-wrist-bracket)
-9. Once again, run "git status" to make sure everything is peachy
-10. Open up SolidWorks and start CADing
+If there are changes, run this line. This will reset your CAD to the current working version.
+"git reset --hard origin/main"
+
+If it does not list any changes, feel free to move ahead
+
+3. Run: git switch main
+4. Run: git pull origin main
+5. Run: git lfs pull origin main
+6. Create a new branch by running the following: git switch -c "subsystem name"/"what you're doing" (Ex. git switch -c arm/update-wrist-bracket)
+7. Once again, run "git status" to make sure everything is peachy
+8. Open up SolidWorks and start CADing
 
 ## What To Do After Each CAD Session
 1. Open your terminal in the URC-CAD repository folder again
