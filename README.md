@@ -5,26 +5,71 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
 ## How To Access
 
 1. Clone repository onto your computer.
-2. Run "git lfs install" inside your repository
-4. Now you can access the CAD in Solidworks
+     
+   You can do this by opening a terminal in the folder you wish to work in and running the following line
+   ```bash
+   git clone https://github.com/sbroboticsteam/URC-CAD
+   ```
+2. Install git large file system inside your repository
+    
+    ```bash
+     git lfs install
+    ```
+3. Now you can access the CAD in Solidworks
 
-## How Pull Files
-1. Open terminal in the URC-CAD folder
-2. Run: git lfs pull
-3. Run: git pull
+## What To Do Before Each CAD Session 
+1. Open a terminal in the URC-CAD repository folder
+2. Run the following to check if there are any unstaged changes.  
+    ```bash
+       git status
+    ```
+   If there are changes, run this line. This will reset your CAD to the current working version.  
+    ```bash
+       git reset --hard origin/main
+    ```
+   
+   If it does not list any changes, feel free to move ahead
 
-## How To Push Files
+3. Run the following lines to update your CAD to the current working version
+    ```bash
+       git switch main
+       git pull origin main
+       git lfs pull origin main
+    ```
+    
+4. Create a new branch by running the following:
+    ```bash
+       git switch -c "subsystem name"/"what you're doing" 
+    ```
+    Example: ```git switch -c arm/update-wrist-bracket```
+   
+5. Once again, run check the git status to make sure everything is peachy ```bash git status```
+6. Open up SolidWorks and start CADing
 
-1. Open terminal in the URC-CAD folder
-2. Run: git add .
-3. Run: git commit -m "commit message"
-4. Run: git push -u origin 'branch name'
+## What To Do After Each CAD Session
+1. Open your terminal in the URC-CAD repository folder again
+2. Stage all of your changes and commit them to git
+    ```bash
+       git add .
+       git commit -m "Brief overview of what you did"
+    ```
+    Example Commit: ```git commit -m "Update wrist bracket mounting geometry"```
+3. Push your changes to the new branch you created at the start of your CAD session
+    ```bash
+       git push -u origin <branch name>
+    ```
+    Example: ```git push -u origin arm/update-wrist-bracket```
+   
+4. Open the github repository web page and click on the banner that says "compare & pull request"
+5. Leave a brief description of your changes and then create a new pull request.
+6. After that, you're free to log off and enjoy the rest of your day :D
+
 
 ## Collaboration Guidelines
 
 - Pull the latest version before editing or adding new files.
-- Make sure to not have Solidworks open when either 
-- Push your work after each CADing session
+- Make sure to not have Solidworks open when working with github 
+- Create a pull request with your work after each CADing session
 - DO NOT EDIT FILES THAT SOMEONE ELSE IS WORKING ON PLEASE (We are not fixing CAD merge conflicts lol)
 - Coordinate with other subsystem teams when modifying assemblies.
 - Contact the project leads if you have questions about workflow.
