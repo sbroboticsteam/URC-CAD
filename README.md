@@ -60,7 +60,9 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
     ```
     Example: ```git push -u origin arm/update-wrist-bracket```
    
-4. Open the github repository web page and navigate to pull requests
+4. Open the github repository web page and click on the banner that says "compare & pull request"
+5. Leave a brief description of your changes and then create a new pull request.
+6. After that, you're free to log off and enjoy the rest of your day :D
 
 
 ## Collaboration Guidelines
