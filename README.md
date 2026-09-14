@@ -23,12 +23,12 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
     ```bash
        git status
     ```
-  If there are changes, run this line. This will reset your CAD to the current working version.  
+   If there are changes, run this line. This will reset your CAD to the current working version.  
     ```bash
        git reset --hard origin/main
     ```
-
-  If it does not list any changes, feel free to move ahead
+   
+   If it does not list any changes, feel free to move ahead
 
 3. Run: git switch main
 4. Run: git pull origin main
