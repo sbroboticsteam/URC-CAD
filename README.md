@@ -10,7 +10,8 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
    ```bash
    git clone https://github.com/sbroboticsteam/URC-CAD
    ```
-2. Install git large file system inside your repository  
+2. Install git large file system inside your repository
+  
   ```bash
    git lfs install
    ```
