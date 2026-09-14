@@ -41,7 +41,7 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
     ```bash
        git switch -c "subsystem name"/"what you're doing" 
     ```
-    Example: ```bash git switch -c arm/update-wrist-bracket```
+    Example: ```git switch -c arm/update-wrist-bracket```
    
 5. Once again, run check the git status to make sure everything is peachy ```bash git status```
 6. Open up SolidWorks and start CADing
@@ -53,12 +53,12 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
        git add .
        git commit -m "Brief overview of what you did"
     ```
-    Example Commit: ```bash git commit -m "Update wrist bracket mounting geometry"```
+    Example Commit: ```git commit -m "Update wrist bracket mounting geometry"```
 3. Push your changes to the new branch you created at the start of your CAD session
     ```bash
        git push -u origin <branch name>
     ```
-    Example: ```bash git push -u origin arm/update-wrist-bracket```
+    Example: ```git push -u origin arm/update-wrist-bracket```
    
 4. Open the github repository web page and navigate to pull requests
 
