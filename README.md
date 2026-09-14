@@ -30,19 +30,37 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
    
    If it does not list any changes, feel free to move ahead
 
-3. Run: git switch main
-4. Run: git pull origin main
-5. Run: git lfs pull origin main
-6. Create a new branch by running the following: git switch -c "subsystem name"/"what you're doing" (Ex. git switch -c arm/update-wrist-bracket)
-7. Once again, run "git status" to make sure everything is peachy
-8. Open up SolidWorks and start CADing
+3. Run the following lines to update your CAD to the current working version
+    ```bash
+       git switch main
+       git pull origin main
+       git lfs pull origin main
+    ```
+    
+4. Create a new branch by running the following:
+    ```bash
+       git switch -c "subsystem name"/"what you're doing" 
+    ```
+    Example: ```bash git switch -c arm/update-wrist-bracket```
+   
+5. Once again, run check the git status to make sure everything is peachy ```bash git status```
+6. Open up SolidWorks and start CADing
 
 ## What To Do After Each CAD Session
 1. Open your terminal in the URC-CAD repository folder again
-2. Run: git add .
-3. Run: git commit -m "Brief overview of what you did"     (Ex: git commit -m "Update wrist bracket mounting geometry")
-4. Run: git push -u origin <branch name> (Ex: git push -u origin arm/update-wrist-bracket)
-5. Open the github repository web page and navigate to pull requests
+2. Stage all of your changes and commit them to git
+    ```bash
+       git add .
+       git commit -m "Brief overview of what you did"
+    ```
+    Example Commit: ```bash git commit -m "Update wrist bracket mounting geometry"```
+3. Push your changes to the new branch you created at the start of your CAD session
+    ```bash
+       git push -u origin <branch name>
+    ```
+    Example: ```bash git push -u origin arm/update-wrist-bracket```
+   
+4. Open the github repository web page and navigate to pull requests
 
 
 ## Collaboration Guidelines
