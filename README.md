@@ -17,7 +17,7 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
     ```
 3. Now you can access the CAD in Solidworks
 
-## What To Do Before Each CAD Session 
+## WHAT TO DO BEFORE EACH CAD SESSION 
 1. Open a terminal in the URC-CAD repository folder
 2. Run the following to check if there are any unstaged changes.  
     ```bash
@@ -46,7 +46,7 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
 5. Once again, run check the git status to make sure everything is peachy ```git status```
 6. Open up SolidWorks and start CADing
 
-## What To Do After Each CAD Session
+## WHAT TO DO AFTER EACH SESSION
 1. Open your terminal in the URC-CAD repository folder again
 2. Stage all of your changes and commit them to git
     ```bash
