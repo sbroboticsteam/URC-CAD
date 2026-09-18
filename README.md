@@ -43,7 +43,7 @@ This repository contains the official CAD files for the **Stony Brook Robotics T
     ```
     Example: ```git switch -c arm/update-wrist-bracket```
    
-5. Once again, run check the git status to make sure everything is peachy ```bash git status```
+5. Once again, run check the git status to make sure everything is peachy ```git status```
 6. Open up SolidWorks and start CADing
 
 ## What To Do After Each CAD Session
