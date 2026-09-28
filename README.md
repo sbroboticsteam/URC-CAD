@@ -2,7 +2,7 @@
 
 This repository contains the official CAD files for the **Stony Brook Robotics Team (SBRT)** robot in the University Rover Challenge. Our robot is designed using Solidworks.
 
-## How To Access
+## How To Access 
 
 1. Install Git on your computer: https://git-scm.com/install/
 2. Clone repository onto your computer.
